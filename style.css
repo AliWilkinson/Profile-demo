@@ -105,3 +105,32 @@ h3 {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
+@media (max-width: 576px) {
+  .image-display {
+    display: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .app-titles {
+    text-align: center;
+  }
+
+  .img-about {
+    padding: 10px;
+  }
+}
