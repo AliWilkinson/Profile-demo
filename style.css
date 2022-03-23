@@ -158,6 +158,10 @@ h3 {
     font-size: 20px;
   }
 
+  .h3-about {
+    color: var(--quaternary-color);
+  }
+
   .container {
     text-align: center;
   }
