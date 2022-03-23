@@ -1,11 +1,18 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #f0f5f9;
+  --secondary-color: #c9d6df;
+  --tertiary-color: #52616b;
+  --quaternary-color: #1e2022;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin: 60px auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+.top-section {
+  background: var(--quaternary-color);
+  padding-bottom: 60px;
 }
 
 h1,
@@ -17,15 +24,19 @@ h3 {
 
 h1 {
   font-size: 96px;
+  padding: 50px;
+  color: var(--secondary-color);
 }
 
 h2 {
   font-size: 48px;
+  color: var(--secondary-color);
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+
+  color: var(--primary-color);
 }
 
 .about-body {
@@ -52,14 +63,25 @@ h3 {
 }
 
 .contact-link {
-  background: var(--primary-color);
+  background: var(--quaternary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--primary-color);
+}
+
+.contact-link:hover {
+  color: var(--quaterary-color);
+  background: var(--primary-color);
 }
 
 .about-link {
+  background: var(--quaternary-color);
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-link:hover {
+  color: var(--quateranry-color);
+  background-color: var(--primary-color);
 }
 
 .homepage-link {
@@ -80,13 +102,14 @@ h3 {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-size: 28px;
   text-decoration: none;
 }
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--quaternary-color);
 }
 
 .fixed-top {
@@ -106,16 +129,17 @@ h3 {
   color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .image-display {
     display: none;
   }
   h1 {
     font-size: 50px;
+    padding: 30px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   h3 {
