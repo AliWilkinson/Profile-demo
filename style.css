@@ -10,7 +10,7 @@ body {
   margin: 60px auto;
   font-family: "Josefin Sans", sans-serif;
 }
-.top-section {
+.hero {
   background: var(--quaternary-color);
   padding-bottom: 60px;
 }
@@ -48,6 +48,9 @@ h3 {
   text-align: left;
 }
 
+.app-p {
+  line-height: 30px;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -138,7 +141,7 @@ h3 {
   width: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .image-display {
     display: none;
   }
@@ -165,5 +168,9 @@ h3 {
 
   .img-about {
     padding: 10px;
+  }
+
+  .content {
+    text-align: center;
   }
 }
