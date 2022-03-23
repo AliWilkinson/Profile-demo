@@ -69,7 +69,7 @@ h3 {
 }
 
 .contact-link:hover {
-  color: var(--quaterary-color);
+  color: var(--quaternary-color);
   background: var(--primary-color);
 }
 
@@ -126,7 +126,16 @@ h3 {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--quateranry-color);
+}
+
+.primary-link:hover {
+  color: var(--primary-color);
+  background: var(--quaternary-color);
+}
+
+.logo {
+  width: 50px;
 }
 
 @media (max-width: 768px) {
