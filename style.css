@@ -4,6 +4,8 @@
   --tertiary-color: #52616b;
   --quaternary-color: #1e2022;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --defult-font: "Josefin Sans", sans-serif;
+  --secondary-font: "Dosis", sans-serif;
 }
 
 body {
@@ -14,39 +16,50 @@ body {
   padding-bottom: 60px;
 }
 
-h1,
 h2,
 h3 {
   text-align: center;
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--defult-font);
 }
 
 p {
-  font-family: "Dosis", sans-serif;
+  font-family: var(--secondary-font);
   line-height: 30px;
   color: var(--quaternary-color);
+  font-size: 20px;
 }
 
 a {
-  font-family: "Dosis", sans-serif;
+  font-family: var(--secondary-font);
 }
 
 h1 {
   font-size: 96px;
   padding: 50px;
   color: var(--secondary-color);
+  margin: 0;
+  font-family: var(--defult-font);
+  text-align: center;
 }
 
 h2 {
   font-size: 48px;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
 }
 
 h3 {
   font-size: 24px;
 
   color: var(--primary-color);
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .h3-about {
@@ -58,8 +71,13 @@ h3 {
   margin: 60px auto;
 }
 
+.home-content {
+  padding-top: 30px;
+}
+
 .app-titles {
   text-align: left;
+  padding: 10px 0px;
 }
 
 .navigation-links {
@@ -69,7 +87,7 @@ h3 {
 }
 
 .navigation-links a {
-  margin: 20px;
+  margin: 50px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -185,7 +203,7 @@ h3 {
     padding: 10px;
   }
 
-  .content {
+  .home-content {
     text-align: center;
   }
 }
