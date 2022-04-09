@@ -204,6 +204,11 @@ footer {
   color: var(--quaternary-color);
 }
 
+@media (max-width: 768px) {
+  .contact-link-bottom {
+    margin-bottom: 50%;
+  }
+}
 @media (max-width: 576px) {
   .image-display {
     display: none;
@@ -248,16 +253,13 @@ footer {
     text-align: center;
   }
 
+  .footer-text {
+    margin-bottom: 15px;
+  }
+
   .contact-link-bottom {
     display: block;
     margin: 0 auto;
-    padding: 10%;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-link-bottom {
-    margin-bottom: 50%;
-    padding: 10%;
+    margin-bottom: 10%;
   }
 }
