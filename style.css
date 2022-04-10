@@ -149,11 +149,15 @@ h4 {
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
+  width: 170px;
   text-decoration: none;
   text-transform: capitalize;
+  text-align: center;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--quateranry-color);
+  display: block;
+  margin: 0 auto;
 }
 
 .primary-link:hover {
@@ -163,6 +167,10 @@ h4 {
 
 .logo {
   width: 50px;
+}
+
+.weather-app {
+  max-width: 100%;
 }
 
 footer {
@@ -182,6 +190,11 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 30px;
+}
+
+.icons a {
+  color: var(--quaternary-color);
+  text-decoration: none;
 }
 .contact-link-bottom {
   font-size: 20px;
@@ -228,6 +241,34 @@ footer {
   background: var(--tertiary-color);
 }
 
+.learn-more {
+  padding: 20px;
+}
+
+.email {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  padding: 70px 70px 10px;
+}
+
+.contact-email {
+  justify-content: start;
+  padding: 20px 70px;
+}
+
+small {
+  display: block;
+  text-align: center;
+  font-family: var(--defult-font);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.img-about {
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   .contact-link-bottom {
     margin-bottom: 50%;
@@ -236,11 +277,20 @@ footer {
   .email-icons {
     padding-top: 30px;
   }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .projects-button {
+    padding: 20px;
+  }
 }
 @media (max-width: 576px) {
-  .image-display {
-    display: none;
-  }
   h1 {
     font-size: 20px;
     padding: 30px;
@@ -289,5 +339,9 @@ footer {
     display: block;
     margin: 0 auto;
     margin-bottom: 10%;
+  }
+
+  .projects-button {
+    padding: 15px;
   }
 }
